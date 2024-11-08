@@ -18,18 +18,20 @@ const timer = setInterval(function() {
     // If countdown ends
     if (distance < 0) {
         clearInterval(timer);
-        document.getElementById("timer").innerHTML = "Event Started!";
+        document.getElementById("timer").innerHTML = "Event is Live!";
     }
 }, 1000);
 
 document.addEventListener("DOMContentLoaded", function() {
     const speakerCarousel = document.querySelector(".speaker-carousel");
+    const speakerslides = document.querySelectorAll('.speaker-slide');
     let scrollAmount = 0;
 
     function scrollCarousel() {
         scrollAmount += 1;
-        if (scrollAmount >= speakerCarousel.scrollWidth / 2) {
+        if (scrollAmount >= speakerCarousel.length) {
             scrollAmount = 0;
+            speakerCarousel.scrollLeft = 0;
         }
         speakerCarousel.scrollLeft = scrollAmount;
     }
