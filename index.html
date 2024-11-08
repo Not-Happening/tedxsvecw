@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEDxSVECW</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1 class="logo">TEDxSVECW</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#sponsors">Sponsors</a>
+            <a href="#events">Events</a>
+            <a href="team.html">Team</a>
+            <a href="#location">Location</a>
+        </nav>
+    </header>
+
+    <!-- Home Section with Countdown -->
+    <section id="home">
+        <div class="hero">
+            <h2 class="hero-title">Welcome to TEDx</h2>
+            <p class="hero-subtitle">Ideas Worth Spreading</p>
+        </div>
+        <div class="countdown-container">
+            <div class="countdown-box">
+                <h3>Next Event Countdown</h3>
+                <div id="timer">
+                    <span id="days">00</span> Days 
+                    <span id="hours">00</span> Hours 
+                    <span id="minutes">00</span> Minutes 
+                    <span id="seconds">00</span> Seconds
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+<section id="events">
+    <h2 class="section-title">Upcoming Events</h2>
+    <div class="event-card">
+        <h3 class="event-title">Event Title</h3>
+        <div class="event-description-box">
+            <h4>Description</h4>
+            <p>Details about the event...</p>
+        </div>
+        <h4 class="event-title"> Speakers</h4> 
+        <div class="event-speakers-box">
+            <div class="speaker-carousel">
+                <div class="speaker-slide">
+                    <div class="speakers-box">
+                        <img src="images/speaker1.jpg" alt="Speaker 1" class="speaker-image">
+                        <p class="speaker-description">Speaker 1: Details about the speaker...</p>
+                    </div>
+                </div>
+                <div class="speaker-slide">
+                    <div class="speakers-box">
+                        <img src="images/speaker1.jpg" alt="Speaker 1" class="speaker-image">
+                        <p class="speaker-description">Speaker 1: Details about the speaker...</p>
+                    </div>
+                </div>
+                <div class="speaker-slide">
+                    <div class="speakers-box">
+                        <img src="images/speaker1.jpg" alt="Speaker 1" class="speaker-image">
+                        <p class="speaker-description">Speaker 1: Details about the speaker...</p>
+                    </div>
+                </div>
+                <div class="speaker-slide">
+                    <div class="speakers-box">
+                        <img src="images/speaker1.jpg" alt="Speaker 1" class="speaker-image">
+                        <p class="speaker-description">Speaker 1: Details about the speaker...</p>
+                    </div>
+                </div>
+                <div class="speaker-slide">
+                    <div class="speakers-box">
+                        <img src="images/speaker1.jpg" alt="Speaker 1" class="speaker-image">
+                        <p class="speaker-description">Speaker 1: Details about the speaker...</p>
+                    </div>
+                </div>
+                
+
+                <!-- Additional speakers can be added here -->
+
+            </div>
+            <div class="all-speakers-list-container">  
+                <h>click here for </h>
+                <a href="speakers.html" class="all-speakers-link">List of all Speakers →</a>
+            </div>
+        </div>
+        <div class="button-container">
+            <button onclick="location.href='register.html'" class="register-button">Register Now</button>
+        </div>
+        
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About TEDx</h2>
+        <p class="section-text">Learn more about our journey, mission, and the impact TEDx events have worldwide.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+            <img src="image1.jpg" alt="Event Image" class="gallery-image">
+            <img src="image2.jpg" alt="Event Image" class="gallery-image">
+            <img src="image3.jpg" alt="Event Image" class="gallery-image">
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors">
+        <h2 class="section-title">Sponsors</h2>
+        <div class="sponsor-carousel">
+            <div class="sponsor-track">
+                <img src="images/sponser1.jpeg" alt="Sponsor Logo" class="sponsor-logo">
+                <img src="images/sponser2.jpeg" alt="Sponsor Logo" class="sponsor-logo">
+                <img src="images/sponser3.jpeg" alt="Sponsor Logo" class="sponsor-logo">
+                <img src="images/sponser4.jpeg" alt="Sponsor Logo" class="sponsor-logo">
+                <!-- Duplicate images for infinite loop effect -->
+                <img src="images/sponser1.jpeg" alt="Sponsor Logo" class="sponsor-logo">
+                <img src="images/sponser2.jpeg" alt="Sponsor Logo" class="sponsor-logo">
+                <img src="images/sponser3.jpeg" alt="Sponsor Logo" class="sponsor-logo">
+                <img src="images/sponser4.jpeg" alt="Sponsor Logo" class="sponsor-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section with Map -->
+    <section id="location">
+        <h2 class="section-title">Location</h2>
+        <p>Find us in Bhimavaram, India</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4423432249176!2d81.52245397502356!3d16.54063598118456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a368fd82f77b91d%3A0x80878c0d1fabbdd9!2sBhimavaram%2C%20Andhra%20Pradesh%20534301%2C%20India!5e0!3m2!1sen!2sus!4v1699298467311!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
