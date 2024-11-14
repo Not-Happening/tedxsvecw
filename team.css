@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+/* Navbar Section */
+
+.navbar{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.navbar .navbar-brand{
+    font-weight: bolder;
+    color: #f00;
+    font-size:xx-large;
+    padding-left: 20px;
+}
+
+.navbar .navbar-nav .nav-item a{
+    color: #E50914;
+    padding-left : 10px;
+    padding-right: 10px;
+    font-weight: 500;
+    font-size: large;
+    transition: background-color 0.3s ease; 
+    border-radius: 10px;
+}
+
+.navbar-toggler-icon{
+   background-color: #f00;
+   
+}
+.navbar .navbar-nav .nav-item a:hover{
+    background-color: aliceblue;
+    border-radius: 10px;
+    
+}
+
+.teamposter-container {
+    text-align: center;
+    background-color: #111;
+    animation: fadeIn 2s ease-in-out;
+    height: 750px
+}
+
+.teamposter-image{
+    width: 100%;
+    height: 700px;
+    border-radius: 0%;
+    margin-right: 10px;
+}
+/* Team-wise Details Section */
+
+.team-heading {
+    background-color: #E50914;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem 0 1rem 0;
+    border-radius: 10px;
+}
+
+/* Container for the entire team section */
+.team-wise-container {
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Grid layout for team members */
+.team-member-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border: #E60025 solid;
+  border-radius: 10px;
+  
+}
+
+/* Grid for team member containers */
+.team-member-container img {
+  width: 200px;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Styling for team member details */
+.team-member-details-container {
+  text-align: center;
+  color: #fff;
+}
+
+.team-member-credentials-container .social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.team-member-credentials-container .social a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.team-member-credentials-container .social i {
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.team-member-credentials-container .social i:hover {
+  color: #f0f0f0; /* Change color on hover */
+}
+
+/* Display team members in a grid with responsive design */
+@media (min-width: 768px) {
+  .team-wise-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .team-wise-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-wise-container {
+    display: block;
+    padding: 15px;
+  }
+  
+.team-member-container img {
+    height: 150px;
+  }
+}
+
+.social a .tw {
+            background-color: #0084b4;
+        }
+        
+.social a .fb {
+    background-color: #3b5998;
+}
+
+.social a .ig {
+    background-color: #cd486b;
+}
+
+.social a .tw:hover {
+    transform: scale(1.15);
+}
+
+.social a .fb:hover {
+    transform: scale(1.15);
+}
+
+.social a .ig:hover {
+    transform: scale(1.15);
+}
+
+.social div {
+    width: 40px;
+    height: 40px;
+    background: green;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.social {
+    /* border: #3b5998 solid; */
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 15;
+    bottom: 0%;
+    display: flex;
+    justify-content: flex-end;
+}

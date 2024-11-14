@@ -22,22 +22,25 @@ const timer = setInterval(function() {
     }
 }, 1000);
 
-document.addEventListener("DOMContentLoaded", function() {
-    const speakerCarousel = document.querySelector(".speaker-carousel");
-    const speakerslides = document.querySelectorAll('.speaker-slide');
-    let scrollAmount = 0;
+const sponserContainer = document.querySelector('.sponsor-track');
 
-    function scrollCarousel() {
-        scrollAmount += 1;
-        if (scrollAmount >= speakerCarousel.length) {
-            scrollAmount = 0;
-            speakerCarousel.scrollLeft = 0;
-        }
-        speakerCarousel.scrollLeft = scrollAmount;
+function startsponsorScroll() {
+    sponserContainer.style.transform = 'translateX(-50%)';
+}
+
+function stopSponsorScroll() {
+    sponserContainer.style.transform = 'translateX(0)';
+}
+
+const sponserObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        startsponsorScroll();
+    } else {
+        stopSponsorScroll();
     }
+  });//
+}, { threshold: 0.5 });
 
-    setInterval(scrollCarousel, 30);
-});
-
-
+sponserObserver.observe(document.querySelector(".sponsor-carousel"));
 
