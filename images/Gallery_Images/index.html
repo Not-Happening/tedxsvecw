@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEDxSVECW</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container-fluid p-0">
+    <!-- Navbar Section -->
+    <div class="heading">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">tedXsvecw</a>
+          <!-- Hamburger Icon -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <!-- ms-auto aligns links to the right -->
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sponsors">Sponsors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#events">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Teams</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#locations">Locations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  <!-- Intro Section -->
+    <section id="home">
+      <div class="grid-container my-4">
+        <div class="row">
+          <div class="col-lg-7 col-md-6 col-12 mb-3 image-div">
+            <img
+              src="images/tedXsvecw_logo_without_bg_2.png"
+              alt="tedXsvecw_Logo"
+              class="tedXsvecw-logo"
+            />
+          </div>
+          <div class="col-lg-5 col-md-6 col-12 d-flex align-items-center">
+            <div class="details-div">
+              <p class="heading1">Happening On...</p>
+              <div class="date-container">
+                <img
+                  src="images/calender_image.png"
+                  alt="calendar image"
+                  class="calendar-container"
+                />
+                <p class="time-container">dd/mm/yyyy</p>
+              </div>
+              <img
+                src="images/tedXsvecw_heading.png"
+                alt="tedXsvecw heading"
+                class="tedXsvecw-heading-logo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- registration page re-direction -->
+      <div class="registration-button-container">
+        <p>Opening Soon.....</p>
+        <button class="registration-button">Register !!!</button>
+      </div>
+
+      <!-- countdown Section-->
+      <div class="countdown-container">
+        <div class="countdown-box">
+          <h3>Event Countdown</h3>
+          <div id="timer">
+            <span id="days">00</span> Days <span id="hours">00</span> Hours
+            <span id="minutes">00</span> Minutes
+            <span id="seconds">00</span> Seconds
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about-box row g-0">
+        <h2 class="section-title">About TEDxSVECW</h2>
+        <p class="section-text">It all started with a spark—a vision to open new doors for our college and connect it to a world of ideas and inspiration. My co-organizer and I dreamed of creating a culture that thrived on learning, collaboration, and bold conversations. It began with simple plans: inviting guest speakers, hosting webinars, and fostering meaningful exchanges.
+
+          But we wanted more than just moments of inspiration; we wanted a movement. That’s when TEDx entered the picture. The idea of bringing a global platform like TEDx to our campus felt like the perfect way to amplify voices, ignite creativity, and build a legacy of innovation. TEDxSVECW became our mission—a stage for ideas worth spreading and stories worth hearing.
+          
+          This year, we dive deeper than ever with the theme “Sea of Voices.” Like the ocean’s infinite waves, this theme embodies the boundless diversity of thoughts and perspectives. Each voice is a wave, carrying its unique story to the shore and adding richness to the greater conversation. Through this journey, we aim to uncover hidden insights, challenge conventions, and celebrate the profound power of shared ideas.
+          
+          Welcome to TEDxSVECW—a voyage through a Sea of Voices, where every wave leaves an indelible mark.</p>
+      </div>
+    </section>
+
+<!-- Speakers Section -->
+    <div class="speakers-container">
+      <div class="speakers-section-title"><h1>Speakers</h1></div>
+      <div class="container py-10">
+      <div id="speakerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Carousel Item 1 -->
+          <div class="carousel-item active">
+            <div class="speaker-div row align-items-center">
+              <div class="col-12 col-md-5 speaker-image-div">
+                <img src="images/Speakers_Images/Anurag_Mittal.jpeg" class="img-fluid" alt="Anurag Mittal">
+              </div>
+              <div class="col-12 col-md-7 speaker-info">
+                <div class="speaker-name">Anurag Mittal</div>
+                <div class="speaker-description">Anurag Mittal's information</div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Item 2 -->
+          <div class="carousel-item">
+            <div class="speaker-div row align-items-center">
+              <div class=" col-12  col-md-5 speaker-image-div">
+                <img src="images/Speakers_Images/Pooja_Vegnesa.png" class="img-fluid" alt="Pooja Vegnesa">
+              </div>
+              <div class="col-12 col-md-7  speaker-info">
+                <div class="speaker-name">Pooja Vegnesa</div>
+                <div class="speaker-description">
+                  Studied at Illinois Institute of Technology Chicago - Illinois Tech
+                  Studied at Shri Vishnu Engineering College for Women
+                  Studied at Fahaheel Al-Watanieh Indian Private School, Kuwait.
+                  Studied at Kendriya Vidyalaya ONGC Chandkheda, Ahmedabad
+                  Lives in Visakhapatnam, Andhra Pradesh, India
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="speaker-div row align-items-center">
+              <div class="col-12 col-md-5 speaker-image-div">
+                <img src="images/Speakers_Images/Anuvamshi_Shetty.png" class="img-fluid" alt="Pooja Vegnesa">
+              </div>
+              <div class="col-12 col-md-7 speaker-info">
+                <div class="speaker-name">Anuvamshi Shetty</div>
+                <div class="speaker-description">
+                  Having begun my journey as a Research Associate and climbing up to a Senior Research role at Morningstar, I've always been driven by an insatiable curiosity and a knack for financial analysis. My experience expanded into the high-stakes world of investment banking as an Analyst at a boutique firm, where I honed my skills in strategic financial solutions and client-focused advisory.
+                  Today, I'm channeling my passion for finance into my most ambitious venture yet – my own startup which is AccelRevenue. Entrepreneurship in the financial sector isn't just a career choice for me; it's a calling. I'm on a mission to leverage my insights, experience, and passion to innovate and create value in the realm of finance.<br>
+                  🔗Open to collaborations, partnerships, and brainstorming sessions. Let's shape the future of finance together!
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more carousel items as needed -->
+        </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#speakerCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#speakerCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+</div>
+    <!-- Gallery Section -->
+    <section id="gallery">
+    <div class="gallery-section-title"><h1>Gallery</h1></div>
+    <div class="gallery-grid">
+      <div class="gallery-image">
+        <img src="images/gallery_images/gallery1.jpg" alt="Event Image" />
+      </div>
+      <div class="gallery-image">
+        <img src="images/gallery_images/gallery2.jpg" alt="Event Image" />
+      </div>
+      <div class="gallery-image">
+        <img src="images/gallery_images/gallery3.jpg" alt="Event Image" />
+      </div>
+      <div class="gallery-image">
+        <img src="images/gallery_images/gallery4.jpg" alt="Event Image" />
+      </div>
+      <div class="gallery-image">
+        <img src="images/gallery_images/gallery5.jpg" alt="Event Image" />
+      </div>
+      <div class="gallery-image">
+        <img src="images/gallery_images/gallery6.jpg" alt="Event Image" />
+      </div>
+      <div class="gallery-image">
+        <img src="images/gallery_images/gallery7.jpg" alt="Event Image" />
+      </div>
+      <div class="gallery-image">
+        <img src="images/gallery_images/gallery8.jpg" alt="Event Image" />
+      </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors">
+      <div class="sponsors-section-title"><h1>Sponsors</h1></div>
+      <div class="sponsor-carousel">
+          <div class="sponsor-track">
+              <img src="images/Sponsors_Images/sponser1.jpeg" alt="Sponsor Logo" class="sponsor-logo">
+              <img src="images/Sponsors_Images/sponser2.jpeg" alt="Sponsor Logo" class="sponsor-logo">
+              <img src="images/Sponsors_Images/sponser3.jpeg" alt="Sponsor Logo" class="sponsor-logo">
+              <img src="images/Sponsors_Images/sponser4.jpeg" alt="Sponsor Logo" class="sponsor-logo">
+              <img src="images/Sponsors_Images/sponser1.jpeg" alt="Sponsor Logo" class="sponsor-logo">
+              <img src="images/Sponsors_Images/sponser2.jpeg" alt="Sponsor Logo" class="sponsor-logo">
+              <img src="images/Sponsors_Images/sponser3.jpeg" alt="Sponsor Logo" class="sponsor-logo">
+              <img src="images/Sponsors_Images/sponser4.jpeg" alt="Sponsor Logo" class="sponsor-logo">
+          </div>
+      </div>
+    </section>
+        <!-- Location & Contact Details Section with Map -->
+    <section id="locations">
+      <div class="container my-4">
+        <div class="row">
+          <div class="location-container col-lg-6 col-md-12">
+            <div class="location-title">Location</div>
+            <p>Find us in Bhimavaram, India.</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4423432249176!2d81.52245397502356!3d16.54063598118456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a368fd82f77b91d%3A0x80878c0d1fabbdd9!2sBhimavaram%2C%20Andhra%20Pradesh%20534301%2C%20India!5e0!3m2!1sen!2sus!4v1699298467311!5m2!1sen!2sus"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="outer-contact-container col-lg-6 col-md-12">
+          <div class="contact-container" id="contact">
+            <div class="contact-title">Contact Us</div>
+            <div class="inner-contact-container">
+              <p>Contact us for more information:</p>
+              <p><strong>Email:</strong> example@email.com</p>
+              <p><strong>Phone:</strong> 8106297438(Sreekari, Organizer)<br>& 8309838365(Rukmini, Co-Organiser)</p>
+              <p><strong>Address:</strong> Bhimavaram, Andhra Pradesh, India</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<script src="scripts.js"></script>
+  </body>
+</html>
